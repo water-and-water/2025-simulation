@@ -1,0 +1,12 @@
+source_Layer,Neuron_Num,Total_Bouton_Num,Total_Axon_Length,Projection_region
+L1,0,0,0.0,VIS_layer2_3
+L2/3,33,9659,162870.18,VIS_layer2_3
+L4,11,5989,90947.018,VIS_layer2_3
+L5,14,532,12477.867,VIS_layer2_3
+L6,6,2219,63286.889,VIS_layer2_3
+source_Layer,Neuron_Num,Total_Bouton_Num,Total_Axon_Length,Projection_region
+L1,0,0,0.0,VIS_layer5
+L2/3,33,6950,142224.345,VIS_layer5
+L4,11,2203,35174.91,VIS_layer5
+L5,14,4103,62742.088,VIS_layer5
+L6,6,1521,54096.247,VIS_layer5
