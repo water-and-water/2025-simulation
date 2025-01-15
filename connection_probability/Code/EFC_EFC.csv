@@ -1,0 +1,12 @@
+source_Layer,Neuron_Num,Total_Bouton_Num,Total_Axon_Length,Projection_region
+L1,0,0,0.0,EFC_layer2_3
+L2/3,38,29386,566661.71,EFC_layer2_3
+L4,4,2949,50034.272,EFC_layer2_3
+L5,35,4359,106192.836,EFC_layer2_3
+L6,27,9670,299268.747,EFC_layer2_3
+source_Layer,Neuron_Num,Total_Bouton_Num,Total_Axon_Length,Projection_region
+L1,0,0,0.0,EFC_layer5
+L2/3,38,24897,493455.469,EFC_layer5
+L4,4,2405,43267.733,EFC_layer5
+L5,35,10116,247688.597,EFC_layer5
+L6,27,16945,609148.775,EFC_layer5
