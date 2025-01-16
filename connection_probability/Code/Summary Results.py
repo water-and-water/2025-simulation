@@ -29,3 +29,37 @@ for label, matrix in matrices.items():
 
 # 将字典中的每个矩阵转换为NumPy数组
 numpy_matrices = {label: np.array(matrix) for label, matrix in matrices.items()}
+
+# 假设numpy_matrices已经定义如上
+# 将字典中的每个矩阵转换为所需的结果
+results = {}
+
+for label, matrix in numpy_matrices.items():
+    # 初始化一个空列表来存储结果
+    result_list = []
+
+    # 遍历矩阵的每个子列表
+    for row in matrix:
+        # 初始化一个空列表来存储当前行的结果
+        row_result = []
+
+        # 遍历当前行的每个元组
+        for tup in row:
+            # 提取元组的前两个元素
+            first, second = tup[0], tup[1]
+            # 计算第二个元素除以第一个元素的值
+            ratio = second / first
+            rounded_ratio = round(ratio, 3)
+            # 将结果添加到当前行的结果列表中
+            row_result.append(rounded_ratio)
+
+        # 将当前行的结果列表添加到总结果列表中
+        result_list.append(row_result)
+
+    # 将结果列表转换为NumPy数组并存储到结果字典中
+    results[label] = np.array(result_list)
+
+# 打印结果
+print("weight matrix-----------------")
+for label, result in results.items():
+    print(f"Results for {label}:\n{result}")
