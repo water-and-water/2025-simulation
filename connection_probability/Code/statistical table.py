@@ -22,11 +22,13 @@ with open(csv_file_path, mode='r', newline='', encoding='utf-8') as csv_file:
         unique_region_values.add(region_value)
         unique_layer_values.add(layer_value)
 
+unique_region_values = sorted(list(unique_region_values))
 print(f"region values: {unique_region_values}")
+print(f"total region number: {len(unique_region_values)}")
 print(f"layer values:{unique_layer_values}")
 
 
-value_to_check = 'VISl'
+value_to_check = 'PFC'
 # 检查值是否在集合中
 if value_to_check in unique_region_values:
     print(f"{value_to_check} is in the set.")

@@ -30,8 +30,8 @@ for label, matrix in matrices.items():
 # 将字典中的每个矩阵转换为NumPy数组
 numpy_matrices = {label: np.array(matrix) for label, matrix in matrices.items()}
 
-# 假设numpy_matrices已经定义如上
-# 将字典中的每个矩阵转换为所需的结果
+
+# 丢弃axon length 的值，并将bouton number/ neuron number 作为 weigh。
 results = {}
 
 for label, matrix in numpy_matrices.items():
@@ -58,6 +58,8 @@ for label, matrix in numpy_matrices.items():
 
     # 将结果列表转换为NumPy数组并存储到结果字典中
     results[label] = np.array(result_list)
+print("----------------------------")
+print(results)
 
 # 打印结果
 print("weight matrix-----------------")

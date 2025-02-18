@@ -97,7 +97,7 @@ def main_process(layer=None):
     for root, dirs, files in os.walk(input_path):
         for file in files:
             file_info =(root,file,output_path)
-            if neuron_info[file.split('.')[0]][0] == region:
+            if neuron_info[file.split('.')[0]][0] == region: #to be changed to get all neurons in set of regions
                 if layer is None or neuron_info[file.split('.')[0]][1] == layer:
                     tasks.append(file_info)
 
@@ -124,7 +124,6 @@ if __name__ == '__main__':
     for layer in Layers:
         print(layer)
         time_start = time.time()  # 开始时间
-
         result = main_process(layer=layer)  # 捕获返回值
         print(f"For {layer},the result is neuron_num,bouton_num, total_axon_length: {result}")
         print("--------------------------------")
